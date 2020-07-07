@@ -1,0 +1,31 @@
+<html><head><title>BSOD</title>
+<style>
+body { cursor:none;font-family:"Segoe UI Light", "Segoe UI", Arial; font-weight: lighter;}
+.content {width:700px; margin:10% auto;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none; }
+</style>
+<SCRIPT TYPE="text/javascript"> 
+
+var message="Sorry, right-click has been disabled"; 
+function clickIE() {if (document.all) {(message);return false;}} 
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) { 
+if (e.which==2||e.which==3) {(message);return false;}}} 
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+document.oncontextmenu=new Function("return false") 
+// --> 
+</SCRIPT>
+</head><body bgcolor="#0086ac" scroll="no">
+<div class="content">
+<font size="4" color="#FFFFFF">
+<p style="font-size:100pt; margin:0; padding-bottom:20pt">:(</p>
+<p style="font-size:20pt; margin:0; padding:0">Ocorreu um problema e seu PC precisa ser reiniciado. Estamos<br />coletando algumas informações sobre o erro e, em seguida, reiniciaremos pra você.</p>
+<br>Reinicie seu computador manualmente<br><br>
+<img src="qr.png" style="float:left;" />
+<div style="float:left;margin-left:30px;width:65%;">
+<p style="font-size:14pt; color:#fff; margin-top:-30px; padding:0;line-height:32px;"><br />Para obter mais informações sobre esse problema e<br>correções possíveis, visite<br>http://windows.com/stopcode<br><br>Se você ligar para o suporte, forneça essas informações:<br>Código de parada: SYS_DEIOKU</p>
+</div>
+</div>
+</font>
+</body></html>
